@@ -35,4 +35,27 @@ You can download the result [here](https://drive.google.com/file/d/16YBVtBMm6LMh
 
 # Analysis
 
-This folder contains all the basic analysis done after the simulation is performed.  
+The analysis folder contains all the basic analysis files that are performed after the simulation is done. 
+
+In order to obtain the tragectory file perform the following on the same location where the simulation file exists.
+
+``` gmx trjconv -s md_20ns.tpr -f md_20ns.xtc -o md_20ns_noPBC.xtc -pbc mol -center``` 
+
+``` gmx rms -s md_20ns.tpr -f md_20ns_noPBC.xtc -o rmsd.xvg -tu ns``` 
+
+``` gmx rms -s em.tpr -f md_20ns_noPBC.xtc -o rmsd_xtal.xvg -tu ns``` 
+
+# Radius of Gyration
+``` gmx gyrate -s md_20ns.tpr -f md_20ns_noPBC.xtc -o gyrate.xvg``` 
+
+
+# Gromacs to PDB
+
+``` gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 250 -o ts_pernano_4frame.pdb``` 
+
+``` gmx trjconv --s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 1000 -o ts_pernano_1frame.pdb``` 
+
+
+# Root mean square deviation
+``` gmx rmsf -s md_20ns.tpr -f md_20ns_noPBC.xtc -o rmsf_with_res.xvg -res``` 
+
