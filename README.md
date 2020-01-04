@@ -64,5 +64,6 @@ Select 1 for 'protein' and select 0 for 'system' consecutively.
 
 # Generating the structures 
 ```gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xt -dt 100 -o structure_20ns.pdb -pbc mol``` 
+
 This will allow you to generate frames per 100ps. It takes the .xtc file as input and assumes that it has the trajctories.
 
