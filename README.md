@@ -41,7 +41,10 @@ In order to obtain the tragectory file perform the following on the same locatio
 
 ``` gmx trjconv -s md_20ns.tpr -f md_20ns.xtc -o md_20ns_noPBC.xtc -pbc mol -center``` 
 
+Select 1 for 'protein' and select 0 for 'system' consecutively. 
+
 ``` gmx rms -s md_20ns.tpr -f md_20ns_noPBC.xtc -o rmsd.xvg -tu ns``` 
+
 
 ``` gmx rms -s em.tpr -f md_20ns_noPBC.xtc -o rmsd_xtal.xvg -tu ns``` 
 
@@ -58,4 +61,8 @@ In order to obtain the tragectory file perform the following on the same locatio
 
 # Root mean square deviation
 ``` gmx rmsf -s md_20ns.tpr -f md_20ns_noPBC.xtc -o rmsf_with_res.xvg -res``` 
+
+# Generating the structures 
+```gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xt -dt 100 -o structure_20ns.pdb -pbc mol``` 
+This will allow you to generate frames per 100ps. It takes the .xtc file as input and assumes that it has the trajctories.
 
