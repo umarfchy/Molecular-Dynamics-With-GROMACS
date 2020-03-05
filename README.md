@@ -15,7 +15,7 @@ Now, do the following for you first ever simulation:-
 6. Type 13 to choose 'SOL'
 7. Do NOT close the terminal and wait until the simulation is done!!!
 
-Alternatively, you can send it work to bakground. This is specially helpful when working with servers. Do the following:-
+Alternatively, you can send the work to bakground. This is specially helpful when working with servers. Do the following:-
 1. Download the repository on your computer. 
 2. Go inside the folder. 
 3. Open the command prompt inside that folder. (Your command prompts current directory should be the same as repository's directory )
