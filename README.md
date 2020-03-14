@@ -48,6 +48,7 @@ Select 1 for 'protein' and select 0 for 'system' consecutively.
 
 ``` gmx rms -s em.tpr -f md_20ns_noPBC.xtc -o rmsd_xtal.xvg -tu ns``` 
 
+Select 'Backbone' both the times.
 # Radius of Gyration
 ``` gmx gyrate -s md_20ns.tpr -f md_20ns_noPBC.xtc -o gyrate.xvg``` 
 
@@ -63,7 +64,7 @@ Select 1 for 'protein' and select 0 for 'system' consecutively.
 ``` gmx rmsf -s md_20ns.tpr -f md_20ns_noPBC.xtc -o rmsf_with_res.xvg -res``` 
 
 # Generating the structures 
-```gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xt -dt 100 -o structure_20ns.pdb -pbc mol``` 
+```gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 100 -o structure_20ns.pdb -pbc mol``` 
 
 This will allow you to generate frames per 100ps. It takes the .xtc file as input and assumes that it has the trajctories.
 
