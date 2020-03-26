@@ -53,7 +53,7 @@ Select 'Backbone' both the times.
 ``` gmx gyrate -s md_20ns.tpr -f md_20ns_noPBC.xtc -o gyrate.xvg``` 
 
 
-# Gromacs to PDB
+# Gromacs gro to pdb fromat conversion
 
 ``` gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 250 -o ts_pernano_4frame.pdb``` 
 
