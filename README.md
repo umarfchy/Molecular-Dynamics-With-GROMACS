@@ -60,7 +60,7 @@ Select 'Backbone' both the times.
 ``` gmx trjconv --s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 1000 -o ts_pernano_1frame.pdb``` 
 
 
-# Root mean square deviation
+# Root mean square fluctuation
 ``` gmx rmsf -s md_20ns.tpr -f md_20ns_noPBC.xtc -o rmsf_with_res.xvg -res``` 
 
 # Generating the structures 
