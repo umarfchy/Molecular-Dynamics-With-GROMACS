@@ -57,7 +57,7 @@ Select 'Backbone' both the times.
 
 ``` gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 250 -o ts_pernano_4frame.pdb``` 
 
-``` gmx trjconv --s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 1000 -o ts_pernano_1frame.pdb``` 
+``` gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 1000 -o ts_pernano_1frame.pdb``` 
 
 
 # Root mean square fluctuation
