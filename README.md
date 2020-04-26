@@ -3,7 +3,7 @@ This tutorial shows the basic process of performing molecular dynamics using GRO
 
 # Setup
 
-If you do not have GROMACS installed then type the following on your linux command line.
+If you do not have GROMACS installed then type the following on your linux command-line.
 ```sudo apt-get install gromacs```
 
 # Perform Molecular Dynamics
@@ -13,7 +13,7 @@ Now, take the following steps to perform your first ever molecular dynamics simu
 
 1. Download/clone this repository on your computer. 
 2. Go inside the folder. 
-3. Open the command line inside that folder. (Your command line's current directory should be the same as repository's directory )
+3. Open the command-line inside that folder. (Your command-line's current directory should be the same as repository's directory )
 4. Type the following code on you prompt: ```bash run_main.sh```
 5. Type 15 to choose 'OPLS-AA/L all-atom force field'
 6. Type 13 to choose 'SOL'
@@ -22,7 +22,7 @@ Now, take the following steps to perform your first ever molecular dynamics simu
 Alternatively, you can send the work to bakground. This is specially helpful when working with servers. Do the following:-
 1. Download the repository on your computer. 
 2. Go inside the folder. 
-3. Open the command line inside that folder. (Your command line's current directory should be the same as repository's directory )
+3. Open the command-line inside that folder. (Your command-line's current directory should be the same as repository's directory )
 4. Type the following code on you prompt: ```bash run1.sh```. This will generate a log file named 'run_1.log'
 5. Type ```tail run_1.log``` to view the log file. Repeat this once in a while until you realise that the file is no loger updating then go to the next step.
 7. Now, type the following code on you prompt: ```bash run2.sh```. This will generate a log file named 'run_2.log'
