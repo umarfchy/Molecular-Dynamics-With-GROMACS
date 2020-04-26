@@ -9,6 +9,8 @@ If you do not have GROMACS installed then type the following on your linux comma
 # Perform Molecular Dynamics
 Now, take the following steps to perform your first ever molecular dynamics simulation!!! 
 
+### Warning: change the simulation parameters (e.g. temperature, time of simulation) as per need by editing the dot mdp files. 
+
 1. Download/clone this repository on your computer. 
 2. Go inside the folder. 
 3. Open the command line inside that folder. (Your command line's current directory should be the same as repository's directory )
@@ -102,8 +104,5 @@ For 4 frames per nano second:
 For 10 frames per nano second:
 
 ```gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 100 -o ts_pernano_10frames.pdb``` 
-
-
-N.B. The md.mdp file can be modified to change the time of simulation and the simulation conditon (e.g. Temperature)
 
 Credits: The tutorial was made following the tutorial of ['Lysozyme in Water'](http://www.mdtutorials.com/gmx/lysozyme/index.html) made by Justin A. Lemkul, Ph.D. Please visit the website for more details.
