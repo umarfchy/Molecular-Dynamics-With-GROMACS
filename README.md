@@ -52,29 +52,38 @@ Select 1 for centering 'protein' and select 0 for 'system' consecutively.
 Select 'Backbone' both the times.
 
 # Radius of Gyration
+
 ``` gmx gyrate -s md_20ns.tpr -f md_20ns_noPBC.xtc -o gyrate.xvg``` 
 
 Select 'Backbone'.
 
 # Root mean square fluctuation
+
 ``` gmx rmsf -s md_20ns.tpr -f md_20ns_noPBC.xtc -o rmsf_with_res.xvg -res``` 
+
 Select 'Backbone'.
 
 # Compute and analyse hydrogen bond
+
 For intra-protein run the following code and select 'Protein' twice. 
+
 ```gmx hbond -f md_20ns_noPBC.xtc -s md_20ns.tpr -num hydrogen2-bond-intra-protein.xvg```
 
 For intra-protein run the following code and select 'Protein' and 'Water'. 
+
 ```gmx hbond -f md_20ns_noPBC.xtc -s md_20ns.tpr -num hydrogen2-bond-protein-water.xvg```
 
 For intra-protein run the following code and select 'Protein' and 'Ligand'. 
+
 ```gmx hbond -f md_20ns_noPBC.xtc -s md_20ns.tpr -num hydrogen2-bond-protein-ligand.xvg```
 
 
 # Compute solvent accessible surface area
+
 ```gmx sasa -f md_20ns_noPBC.xtc -s md_20ns.tpr -o sas2.xvg -oa atomic2-sas.xvg -or residue2-sas.xvg```
 
 # Principle Component Analysis (PCA)
+
 ```gmx covar -f md_20ns_noPBC.xtc -s md_20ns.tpr -o eigenval.xvg  -v eigenvec.trr -av average.pdb -xpm covar.xpm -xpma covara.xpm```
 
 
@@ -83,15 +92,18 @@ For intra-protein run the following code and select 'Protein' and 'Ligand'.
 In order to visulize the simulation use any of the following codes with the corresponding choice of time frame. You can select 'System' if you want to visualize the entire system or else you can choose 'Protein' to only see the changes in the protein. 
 
 For 1 frame per nano second:
+
 ``` gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 1000 -o ts_pernano_1frame.pdb``` 
 
 For 4 frames per nano second:
+
 ``` gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 250 -o ts_pernano_4frames.pdb``` 
 
 For 10 frames per nano second:
+
 ```gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 100 -o ts_pernano_10frames.pdb``` 
 
-N.B. The md.mdp file can be modified to change the time of simulation and the simulation conditon (e.g. Temperature)
 
+N.B. The md.mdp file can be modified to change the time of simulation and the simulation conditon (e.g. Temperature)
 
 Credits: The tutorial was made following the tutorial of [Lysozyme in Water](http://www.mdtutorials.com/gmx/lysozyme/index.html) made by Justin A. Lemkul, Ph.D. Please visit the website for more details.
