@@ -106,4 +106,4 @@ For 10 frames per nano second:
 
 N.B. The md.mdp file can be modified to change the time of simulation and the simulation conditon (e.g. Temperature)
 
-Credits: The tutorial was made following the tutorial of [Lysozyme in Water](http://www.mdtutorials.com/gmx/lysozyme/index.html) made by Justin A. Lemkul, Ph.D. Please visit the website for more details.
+Credits: The tutorial was made following the tutorial of ['Lysozyme in Water'](http://www.mdtutorials.com/gmx/lysozyme/index.html) made by Justin A. Lemkul, Ph.D. Please visit the website for more details.
