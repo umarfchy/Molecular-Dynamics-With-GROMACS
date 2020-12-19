@@ -47,7 +47,7 @@ In order to obtain the tragectory file perform the following on the same locatio
 
 Select 1 for centering 'protein' and select 0 for 'system' consecutively. 
 
-# Root mean square fluctuation
+# Root mean square deviation
 
 ``` gmx rms -s md_20ns.tpr -f md_20ns_noPBC.xtc -o rmsd.xvg -tu ns``` 
 
