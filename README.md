@@ -105,4 +105,7 @@ For 10 frames per nano second:
 
 ```gmx trjconv -s md_20ns.tpr -f md_20ns_noPBC.xtc -dt 100 -o ts_pernano_10frames.pdb``` 
 
+# Indexing protein in a system
+`gmx select -f md.gro -s md.tpr -on output.ndx -select protein`
+
 Credits: The tutorial was made following the tutorial of ['Lysozyme in Water'](http://www.mdtutorials.com/gmx/lysozyme/index.html) made by Justin A. Lemkul, Ph.D. Please visit the website for more details.
